@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Start</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">                
+        <img class="fs-logo" src="./media/fresh_start_logo.png" alt="Fresh Start Organization Logo"> 
+        <h1 class="title">Fresh Start Scheduling</h1>   
+    </header>
+   
+    <main>
+        <section class="mainImage">
+            <div class="dailySchedule">
+                <h2 class= "dailyScheduleTitle">What would you like to tackle today?</h2>
+                <p>Lets plan your day to be organized and productive.</p>
+                <p>An essential part of productivity is to reward yourself.</p>
+                <p>Type in the activities you would like to accomplish today.</p>
+                <form id="dailyScheduleForm">
+                  <input
+                    id="activityInput"
+                    placeholder="Type here...start with something fun...all work and no play makes Jack a dull boy!"
+                    type="text"
+                    name="activity"
+                  />
+                  <input id="workSelect" type="radio" id="chore" name="type" value="chore" />
+                  <label for="chore">Work</label>
+                  <input id="playSelect" type="radio" id="reward" name="type" value="reward" />
+                  <label for="reward">Play</label>          
+                  <button type="submit">Add to list</button>
+                </form>
+                <ul id="dailyScheduleList"></ul>
+            </div>
+        </section>
+    </main>
+    <footer>        
+        <nav class="linkFooter">
+            <a href="./media/daily_planner.pdf" target="_blank">Printable Planner</a>
+            <a href="https://www.google.com/search?q=gyms&sca_esv=5c33b0bec17714d5&sxsrf=AHTn8zoQt48LGFxjMwgYhckld1QWIeKGYA%3A1739919389555&ei=HRC1Z6zMIbKL0PEP9POTuAg&ved=0ahUKEwjszpvpqM6LAxWyBTQIHfT5BIcQ4dUDCBA&uact=5&oq=gyms&gs_lp=Egxnd3Mtd2l6LXNlcnAiBGd5bXMyCBAAGIAEGJIDMgsQABiABBiSAxiKBTINEAAYgAQYsQMYQxiKBTIQEAAYgAQYsQMYQxjJAxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBUj8eVDcGFjeP3ACeAGQAQCYAU-gAakCqgEBNLgBA8gBAPgBAZgCBqAC1QLCAgoQABiwAxjWBBhHwgINEAAYsAMY1gQYRxjJA8ICDhAAGIAEGLADGJIDGIoFwgINEAAYgAQYsAMYQxiKBcICCxAAGIAEGJECGIoFwgIGEAAYBxgewgIFEAAYgATCAgoQABiABBgUGIcCwgIGEAAYFhgewgIREAAYgAQYkQIYsQMYyQMYigXCAg4QABiABBiRAhiSAxiKBZgDAIgGAZAGCpIHATagB4MY&sclient=gws-wiz-serp" target="_blank">Gyms & Rec</a>
+            <a href="https://www.google.com/search?q=parks&sca_esv=5c33b0bec17714d5&sxsrf=AHTn8zo0xyczcRgc3KKvZ5Uh1DLxtn44Ig%3A1739919409285&ei=MRC1Z6qIEcfC0PEP8JC-mA0&ved=0ahUKEwjq5M_yqM6LAxVHITQIHXCID9MQ4dUDCBA&uact=5&oq=parks&gs_lp=Egxnd3Mtd2l6LXNlcnAiBXBhcmtzMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgsQABiABBiSAxiKBTILEAAYgAQYkgMYigUyDRAAGIAEGLEDGEMYigUyEBAAGIAEGLEDGEMYyQMYigUyEBAuGIAEGLEDGEMYgwEYigUyDhAAGIAEGLEDGIMBGIoFMgsQABiABBixAxiDAUjyC1AAWKEFcAB4AZABAJgBfaAB7wOqAQM0LjG4AQPIAQD4AQGYAgWgAtEEwgIEECMYJ8ICChAjGIAEGCcYigXCAgsQLhiABBixAxiDAcICBBAAGAPCAg4QLhiABBixAxiDARiKBcICExAAGIAEGLEDGEMYgwEYyQMYigXCAgUQABiABMICERAuGIAEGJECGMcBGIoFGK8BwgILEAAYgAQYkQIYigXCAg4QLhiABBixAxjHARivAcICCBAuGIAEGLEDmAMAkgcDMC41oAfWTA&sclient=gws-wiz-serp" target="_blank">Parks</a>    
+            <a href="https://www.google.com/search?q=grocery+stores&sca_esv=5c33b0bec17714d5&sxsrf=AHTn8zosSDjXhGn0ys_DlJKJDce7ay4aaQ%3A1739919458793&ei=YhC1Z9mQMJCJ0PEP37fDyQQ&oq=grocery&gs_lp=Egxnd3Mtd2l6LXNlcnAiB2dyb2NlcnkqAggAMhMQABiABBixAxhDGIMBGMkDGIoFMgsQABiABBiSAxiKBTILEAAYgAQYkgMYigUyChAAGIAEGEMYigUyEBAAGIAEGLEDGEMYgwEYigUyDRAAGIAEGLEDGEMYigUyBBAAGAMyExAuGIAEGLEDGNEDGEMYxwEYigUyCxAAGIAEGLEDGIMBMgsQABiABBixAxiDAUjNQlAAWKYpcAF4AZABAJgBe6AB1AWqAQM2LjK4AQHIAQD4AQGYAgmgAqwGwgIKECMYgAQYJxiKBcICBBAjGCfCAhYQLhiABBixAxjRAxhDGIMBGMcBGIoFwgIOEC4YgAQYsQMYgwEYigXCAhAQLhiABBhDGMcBGIoFGK8BwgIOEC4YgAQYsQMY0QMYxwHCAg0QABiABBhDGMkDGIoFwgIFEAAYgATCAggQLhiABBjUAsICCxAuGIAEGJECGIoFwgIOEC4YgAQYxwEYjgUYrwHCAggQLhiABBixA8ICERAuGIAEGMcBGJgFGJoFGK8BwgIIEAAYgAQYsQPCAg4QABiABBixAxiDARiKBZgDAJIHAzUuNKAH7m0&sclient=gws-wiz-serp" target="_blank">Grocery Stores</a>
+            <a href="https://www.google.com/search?q=library&sca_esv=5c33b0bec17714d5&sxsrf=AHTn8zqsYSecwLlt8smc2KYhRCTmK_Ir9A%3A1739919505259&ei=kRC1Z9XED5rG0PEPv96AsAE&oq=librar&gs_lp=Egxnd3Mtd2l6LXNlcnAiBmxpYnJhcioCCAEyEBAAGIAEGLEDGEMYyQMYigUyDRAAGIAEGLEDGEMYigUyCBAAGIAEGJIDMgsQABiABBiSAxiKBTINEAAYgAQYsQMYQxiKBTIQEAAYgAQYsQMYQxiDARiKBTIQEAAYgAQYsQMYQxiDARiKBTILEC4YgAQY0QMYxwEyBRAAGIAEMgsQLhiABBjHARivAUiQMVC5EljJGnAFeAGQAQCYAWGgAY4EqgEBNrgBA8gBAPgBAZgCC6ACuwXCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICChAjGIAEGCcYigXCAgQQIxgnwgIKEAAYgAQYQxiKBcICExAuGIAEGNEDGEMY1AIYxwEYigXCAhEQLhiABBixAxjRAxiDARjHAcICCBAAGIAEGLEDwgITEC4YgAQYsQMY0QMYQxjHARiKBcICFhAuGIAEGLEDGNEDGEMYgwEYxwEYigXCAgoQLhiABBhDGIoFwgILEAAYgAQYsQMYgwHCAg4QABiABBixAxiDARiKBZgDAIgGAZAGDJIHAzguM6AH7j4&sclient=gws-wiz-serp" target="_blank">Libraries</a>
+            <a href="https://www.google.com/search?q=indigenous+friendship+centres&sca_esv=5c33b0bec17714d5&sxsrf=AHTn8zoB0x9cfBr5JWRtGzVYBA6fR6EBGA%3A1739919583006&ei=3xC1Z8oI-8HQ8Q-Z95XpCA&ved=0ahUKEwiK9LrFqc6LAxX7IDQIHZl7JY0Q4dUDCBA&uact=5&oq=indigenous+friendship+centres&gs_lp=Egxnd3Mtd2l6LXNlcnAiHWluZGlnZW5vdXMgZnJpZW5kc2hpcCBjZW50cmVzMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHki0ngFQwg9Y1ZsBcAZ4AZABAJgBaaAB1BiqAQQzNi4zuAEDyAEA-AEBmAItoALZG6gCCsICChAAGLADGNYEGEfCAhAQABiABBiwAxhDGMkDGIoFwgIOEAAYgAQYsAMYkgMYigXCAgoQIxiABBgnGIoFwgIIEAAYgAQYkgPCAgsQABiABBiSAxiKBcICDRAAGIAEGLEDGEMYigXCAgsQLhiABBjRAxjHAcICCBAAGIAEGLEDwgIKEAAYgAQYQxiKBcICEBAAGIAEGLEDGEMYgwEYigXCAhEQLhiABBixAxjRAxiDARjHAcICDhAAGIAEGLEDGIMBGIoFwgIEECMYJ8ICBxAjGCcY6gLCAgsQABiABBiRAhiKBcICCxAAGIAEGLEDGIMBwgIOEC4YgAQYsQMY0QMYxwHCAhYQLhiABBixAxjRAxhDGIMBGMcBGIoFwgITEAAYgAQYsQMYQxiDARjJAxiKBcICEBAuGIAEGNEDGEMYxwEYigXCAhAQLhiABBixAxhDGIMBGIoFwgINEAAYgAQYQxjJAxiKBcICEBAAGIAEGLEDGEMYyQMYigXCAg0QABiABBixAxgUGIcCwgINEAAYgAQYFBiHAhjJA8ICChAAGIAEGBQYhwLCAgsQLhiABBjHARivAcICBRAuGIAEwgIIEAAYgAQYogTCAgUQIRigAZgDDPEFodCQh911zFmIBgGQBgqSBwQzNi45oAfF-QM&sclient=gws-wiz-serp" target="_blank">Friendship Centres</a>
+            <a href="https://www.google.com/search?q=art+classes&oq=art+classes&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg70gEIMjc4OWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8" target="_blank">Art Classes<a>
+        </nav>
+        <p>defrost web-designs 2025</p>    
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

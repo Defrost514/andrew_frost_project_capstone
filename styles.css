@@ -1,0 +1,229 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+.title {
+    color: white;
+    font-size: 7rem;
+    padding-top: 10%;
+    padding-left: 20%;
+    text-align: center;
+    position: realtive;
+    
+}
+
+.header {
+    background-color: #8EB7E8;
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: 5px solid #124559;
+}
+
+.fs-logo{
+    width: 30rem;
+    height: 20rem;
+    object-fit: contain;
+    margin-left: 20px;
+}
+
+.fs-logo:hover {
+    border-radius: 40%;
+    transition: 2s ease-in-out;
+    transform: translateY(20%);
+  }
+
+.mainImage {
+    background-image: url(media/forest.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:sticky;
+}
+
+.dailySchedule {
+    background-color: #124559;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.dailyScheduleTitle {
+    padding-bottom: 1rem;
+}
+
+.dailySchedule p {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+button {
+    font-size: 1.5rem;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    width: 10rem;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: white;
+    color: black
+}
+
+#activityInput {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+}
+
+input[type="radio"] {
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 1rem;
+}
+
+label{
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+.linkFooter {
+    background-color: #8EB7E8;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+.linkFooter a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.linkFooter p {
+    margin-left: 2rem;
+}
+
+li {
+    background-color: #ba711e;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    list-style-type: none;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: center;
+  }
+  
+.chore, .reward {
+    border-radius: 8px;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.chore {
+    background-color: #124559;
+}
+.reward {    
+    background-color: #AEC3B0;
+}
+  
+#dailyScheduleList {
+    border-radius: 8px;
+    background-color: white;
+    margin-top: 1rem;
+    padding: 0.25rem;
+}
+  
+.done {
+    text-decoration: line-through;
+    background-color: #01161E;
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 3rem; 
+        padding-left: 10%;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row; 
+    }
+
+    .fs-logo {
+        width: 8rem; 
+        height: 6rem;
+    }
+
+    .dailySchedule p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .linkFooter {
+        font-size: 0.5rem;
+        padding: 0;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem; 
+        padding-left: 10%;
+        padding-top: 5%;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px; 
+    }
+
+    .fs-logo {
+        width: 6rem; 
+        height: 4rem;
+    }
+
+    .mainImage {
+        height: 70vh;
+        background-position: top;
+    }
+
+    .dailySchedule p {
+        padding-left: 15px;
+    }
+
+    .linkFooter {
+        font-size: 0.5rem;
+        flex-direction: column;
+        padding: 10;
+    }
+    li {
+        padding: 8px;
+    }
+
+}  
